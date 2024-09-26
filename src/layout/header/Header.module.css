@@ -67,7 +67,7 @@
   width: 116px;
     height: 20px;
   flex-grow: 1;
-  color: var(--black-20);
+  color: var(--black-100);
 }
 .searchBarContainer .searchIcon{
   width: 16px;
