@@ -38,8 +38,12 @@
   gap: var(--8);
   border-radius: var(--8);
   color: var(--black-100);
+  align-items: center;
 }
 
+.navProfileDiv p {
+  margin-top: 4px;
+}
 .activitiesContainer,
 .menuDropperContainer {
   display: flex;

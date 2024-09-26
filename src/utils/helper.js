@@ -53,40 +53,40 @@ export const LineData = {
   data: [
     {
       name: new Date("2024-01-20"),
-      currentActual: 8, // Representing 8.5M
+      previous: 8, // Representing 8.5M
       currentPredicted: null,
-      previous: 12, // Representing 10.5M
+      currentActual: 12, // Representing 10.5M
     },
     {
       name: new Date("2024-02-01"),
-      currentActual: 12,
+      previous: 16,
       currentPredicted: null,
-      previous: 9,
+      currentActual: 9,
     },
     {
       name: new Date("2024-03-01"),
-      currentActual: 13,
+      previous: 18,
       currentPredicted: null,
-      previous: 10,
+      currentActual: 10,
     },
 
     {
       name: new Date("2024-04-01"),
-      currentActual: 10,
-      currentPredicted: null,
       previous: 14,
+      currentPredicted: 18,
+      currentActual: 18,
     },
     {
       name: new Date("2024-05-01"),
-      currentActual: 12,
-      currentPredicted: 12, // Same as current actual
       previous: 12,
+      currentPredicted: 22, // Same as current actual
+      currentActual: null,
     },
     {
       name: new Date("2024-06-01"),
+      previous: 20,
+      currentPredicted: 16,
       currentActual: null,
-      currentPredicted: 14,
-      previous: 10,
     },
   ],
 };

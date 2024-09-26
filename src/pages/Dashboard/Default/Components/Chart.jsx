@@ -102,7 +102,7 @@ export const RevenueChart = ({ LineData }) => {
             dataKey="currentPredicted"
             stroke="#000"
             dot={false}
-            strokeDasharray="5 5"
+            strokeDasharray="6 8"
             strokeWidth={3}
             name="Predicted"
           />
