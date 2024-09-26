@@ -46,7 +46,6 @@
   flex-direction: column;
   padding: 0px 0px var(--12) 0px;
   gap: var(--4);
-  opacity: 0px;
 
 }
 .menuDropperIcon svg path{
