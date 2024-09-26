@@ -48,7 +48,6 @@ const Sidebar = () => {
         </div>
         {dashboard && (
           <Suspense fallback={<div>Loading Dashboard Menu...</div>}>
-            {" "}
             {/* Loading state for MenuDropper */}
             <MenuDropper
               data={dashboard.data}

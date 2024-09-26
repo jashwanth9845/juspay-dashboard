@@ -81,7 +81,7 @@ opacity: 0.5;
   padding: var(--4) var(--8) var(--4) 0px;
   gap: var(--4);
   border-radius: var(--8);
-  opacity: 0px;
+  
   color: var(--black-100);
   cursor: pointer;
   text-decoration: none;
