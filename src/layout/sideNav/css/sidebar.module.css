@@ -108,14 +108,13 @@ transform: rotate(90deg);
 }
 
 .menuDropperDiv.active::before , .linkDiv.active::before{
-  content: '';
-  display: block;
+  background: var(--Primary-Brand);
+  border-radius: var(--8);
+  content: "";
+  display: flex;
+  margin-right: 12px;
   position: relative;
   width: 5px;
-  height: 100%;
-    margin-right: 12px;
-  border-radius: var(--8);
-  background: var(--Primary-Brand);
 }
 
 .menuDropperLink {
