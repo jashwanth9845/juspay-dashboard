@@ -79,7 +79,7 @@ export const LineData = {
     {
       name: new Date("2024-05-01"),
       previous: 12,
-      currentPredicted: 22, // Same as current actual
+      currentPredicted: 21, // Same as current actual
       currentActual: null,
     },
     {

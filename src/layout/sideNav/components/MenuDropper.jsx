@@ -34,11 +34,11 @@ const MenuDropper = ({ data, label, styles }) => {
       {data?.map((e, index) => {
         const { icon, type, list } = e || {};
         const isActive = breadCrumb?.some((bc) => bc.path === type?.slug); // Check if the current slug matches breadcrumb
-
+        const RenderDiv = list ? "div" : Link;
         return (
           <React.Fragment key={index}>
-            <Link
-              to={type?.slug}
+            <RenderDiv
+              {...(!list ? { to: type?.slug } : {})}
               onClick={() => {
                 setLinkType((prev) =>
                   prev === type?.label ? null : type?.label
@@ -79,7 +79,7 @@ const MenuDropper = ({ data, label, styles }) => {
                 />
                 <span className={styles?.menuDropperSpan}>{type?.label}</span>
               </motion.div>
-            </Link>
+            </RenderDiv>
             {type?.label === linkType ? (
               <LinkDropper
                 list={list}
