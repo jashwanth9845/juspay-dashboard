@@ -51,6 +51,12 @@ npm start
 
 After this, open your browser and navigate to http://localhost:3000 to view the dashboard.
 
+## To visit orders page
+
+```
+click on orders statCard or visit nav menu under Dashboards/Projects/orders
+```
+
 ## Scripts
 
 This project includes the following scripts:

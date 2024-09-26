@@ -150,6 +150,10 @@ const MainContent = () => {
 
           {/* Profile Routes */}
           <Route
+            path="/pages"
+            element={<Navigate to={"/pages/profile/overview"} />}
+          />
+          <Route
             path="/pages/profile/"
             element={<Navigate to={"/pages/profile/overview"} />}
           />

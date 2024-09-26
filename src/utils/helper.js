@@ -130,15 +130,15 @@ export const SideNavData = {
     {
       type: "Favorites",
       list: [
-        { label: "Overview", slug: "account/overview" },
-        { label: "Projects", slug: "account/projects" },
+        { label: "Overview", slug: "/dashboard/e-commerce/overview" },
+        { label: "Projects", slug: "/pages/profile/projects" },
       ],
     },
     {
       type: "Recently",
       list: [
-        { label: "Overview", slug: "profile/overview" },
-        { label: "Documents", slug: "profile/documents" },
+        { label: "Overview", slug: "/pages/profile/overview" },
+        { label: "Documents", slug: "/pages/corporate/documents" },
       ],
     },
   ],

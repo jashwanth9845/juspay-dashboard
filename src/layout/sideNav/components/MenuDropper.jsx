@@ -50,7 +50,11 @@ const MenuDropper = ({ data, label, styles }) => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8 }}
                 className={`${styles?.menuDropperDiv} ${
-                  isActive && !list ? styles.active : ""
+                  isActive && !list
+                    ? styles.active
+                    : type?.label === linkType
+                    ? styles.menuOpened
+                    : ""
                 } regular-14 w-400`}
               >
                 {list && (

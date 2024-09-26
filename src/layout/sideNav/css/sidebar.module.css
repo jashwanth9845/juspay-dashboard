@@ -18,6 +18,7 @@
   flex-direction: column;
   width: 100%;
   gap: var(--4);
+  margin-top: 10px;
 }
 
 .linkDiv {
@@ -26,7 +27,7 @@
   display: flex;
   padding: var(--4) var(--16) var(--4) 0;
   gap: var(--4);
-  margin-left: var(--30);
+  margin-left: 41px;
   border-radius: var(--8);
   width: fit-content;
 }
@@ -92,6 +93,9 @@ opacity: 0.5;
 }
 .menuDropperDiv.active  , .linkDiv.active{
   background: var(--black-5);
+}
+.menuDropperDiv.menuOpened .rightIcon{
+  transform: rotate(90deg);
 }
 .menuDropperDiv.active .rightIcon{
 transform: rotate(90deg);
