@@ -8,6 +8,7 @@ import {
   tableData,
 } from "../../../utils/helper";
 import styles from "./css/MainContent.module.css";
+import Loading from "../../../components/Loading";
 
 // Lazy load the components
 const StatCards = lazy(() => import("./Components/StatCard"));
@@ -35,20 +36,20 @@ const ErrorBoundary = lazy(() =>
 
 export default function Dashboard() {
   return (
-    <Suspense fallback={<div>Loading Dashboard...</div>}>
+    <Suspense fallback={<Loading />}>
       {/* Loading state for the entire Dashboard */}
       <ErrorBoundary>
         {/* Wrap the entire Dashboard in ErrorBoundary */}
         <div className={styles.mainContent}>
           <div className={styles.row1}>
             <div className={styles.flexItem}>
-              <Suspense fallback={<div>Loading Status Cards...</div>}>
+              <Suspense fallback={<Loading />}>
                 {/* Loading state for StatCards */}
                 <StatCards statusCard={statusCard} />
               </Suspense>
             </div>
             <div className={styles.flexItem}>
-              <Suspense fallback={<div>Loading Bar Projection Chart...</div>}>
+              <Suspense fallback={<Loading />}>
                 {/* Loading state for BarProjectionChart */}
                 <BarProjectionChart BarData={BarData} style={styles} />
               </Suspense>
@@ -56,13 +57,13 @@ export default function Dashboard() {
           </div>
           <div className={styles.row2}>
             <div className={styles.flexItem}>
-              <Suspense fallback={<div>Loading Revenue Chart...</div>}>
+              <Suspense fallback={<Loading />}>
                 {/* Loading state for RevenueChart */}
                 <RevenueChart LineData={LineData} />
               </Suspense>
             </div>
             <div className={styles.flexItem}>
-              <Suspense fallback={<div>Loading Revenue Map...</div>}>
+              <Suspense fallback={<Loading />}>
                 {/* Loading state for RevenueMap */}
                 <RevenueMap locations={revenueLocations} />
               </Suspense>
@@ -70,13 +71,13 @@ export default function Dashboard() {
           </div>
           <div className={styles.row3}>
             <div className={styles.flexItem}>
-              <Suspense fallback={<div>Loading Table...</div>}>
+              <Suspense fallback={<Loading />}>
                 {/* Loading state for Table */}
                 <Table data={tableData} />
               </Suspense>
             </div>
             <div className={styles.flexItem}>
-              <Suspense fallback={<div>Loading Sales Chart...</div>}>
+              <Suspense fallback={<Loading />}>
                 {/* Loading state for SalesChart */}
                 <SalesChart data={SalesChartData} />
               </Suspense>

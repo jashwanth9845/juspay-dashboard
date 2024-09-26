@@ -2,6 +2,7 @@ import React, { useContext, useEffect, lazy, Suspense } from "react";
 import { Routes, Route, useLocation, Navigate } from "react-router-dom";
 import { AppContext } from "../context/AppContext";
 import { flattenSideNavData, SideNavData } from "../utils/helper";
+import Loading from "../components/Loading";
 
 // Lazy load dashboard components
 const Dashboard = lazy(() => import("./Dashboard/Default"));
@@ -84,7 +85,7 @@ const MainContent = () => {
   }, [location, handleBreadCrumb]);
 
   return (
-    <Suspense fallback={<div>Loading Main Content...</div>}>
+    <Suspense fallback={<Loading />}>
       {" "}
       {/* Loading state for the entire component */}
       <ErrorBoundary>

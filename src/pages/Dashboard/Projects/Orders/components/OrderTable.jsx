@@ -20,6 +20,7 @@ const OrderTable = ({
           <th>
             <label className={styles?.customCheckbox}>
               <input
+                style={{ display: "none" }}
                 type="checkbox"
                 onChange={handleSelectAll}
                 checked={

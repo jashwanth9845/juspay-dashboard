@@ -156,12 +156,15 @@ a{
 .recharts-rectangle.recharts-tooltip-cursor{
   fill: var(--black-5);
 }
-.coming-soon{
+.coming-soon {
   display: flex;
   width: 100%;
   height: calc(100vh - 145px);
   justify-content: center;
   align-items: center;
+  color: var(--black-100);
+}
+.loading-div{
   color: var(--black-100);
 }
 .no-data-found{

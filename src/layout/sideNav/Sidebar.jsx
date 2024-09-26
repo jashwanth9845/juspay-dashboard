@@ -3,6 +3,7 @@ import styles from "./css/sidebar.module.css";
 import { SideNavData } from "../../utils/helper";
 import { AppContext } from "../../context/AppContext";
 import ErrorBoundary from "../../components/ErrorBoundary/ErrorBoundary";
+import Loading from "../../components/Loading";
 
 // Lazy load the MenuDropper and SideList components
 const MenuDropper = lazy(() => import("./components/MenuDropper"));
@@ -19,7 +20,7 @@ const Sidebar = () => {
       {" "}
       {/* Wrap the entire sidebar in ErrorBoundary */}
       <aside className={`${styles?.sidebar} ${!sideNav ? styles.close : ""}`}>
-        <Suspense fallback={<div>Loading Profile...</div>}>
+        <Suspense fallback={<Loading />}>
           {" "}
           {/* Loading state for NavProfile */}
           <NavProfile profile={profile} styles={styles} />
@@ -40,14 +41,14 @@ const Sidebar = () => {
               );
             })}
           </div>
-          <Suspense fallback={<div>Loading Side List...</div>}>
+          <Suspense fallback={<Loading />}>
             {" "}
             {/* Loading state for SideList */}
             <SideList data={sideData} styles={styles} />
           </Suspense>
         </div>
         {dashboard && (
-          <Suspense fallback={<div>Loading Dashboard Menu...</div>}>
+          <Suspense fallback={<Loading />}>
             {/* Loading state for MenuDropper */}
             <MenuDropper
               data={dashboard.data}
@@ -57,7 +58,7 @@ const Sidebar = () => {
           </Suspense>
         )}
         {pages && (
-          <Suspense fallback={<div>Loading Pages Menu...</div>}>
+          <Suspense fallback={<Loading />}>
             {" "}
             {/* Loading state for MenuDropper */}
             <MenuDropper

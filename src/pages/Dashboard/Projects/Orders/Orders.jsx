@@ -1,6 +1,7 @@
 import React, { useState, lazy, Suspense } from "react"; // Import lazy and Suspense
 import styles from "./css/orderTable.module.css";
 import { orderData } from "../../../../utils/helper";
+import Loading from "../../../../components/Loading";
 
 // Lazy load components
 const FilterNavBar = lazy(() => import("./components/FilterNavBar"));
@@ -76,7 +77,7 @@ const ProjectOrders = () => {
   };
 
   return (
-    <Suspense fallback={<div>Loading Project Orders...</div>}>
+    <Suspense fallback={<Loading />}>
       {" "}
       {/* Loading state for the entire component */}
       <ErrorBoundary>
@@ -85,7 +86,7 @@ const ProjectOrders = () => {
         <div className={styles.tableContainer}>
           <h2 className="semibold-14">Order List</h2>
 
-          <Suspense fallback={<div>Loading Filter Navigation Bar...</div>}>
+          <Suspense fallback={<Loading />}>
             {" "}
             {/* Loading state for FilterNavBar */}
             <FilterNavBar
@@ -96,14 +97,14 @@ const ProjectOrders = () => {
           </Suspense>
 
           {showFilterDropdown && (
-            <Suspense fallback={<div>Loading Filter Dropdown...</div>}>
+            <Suspense fallback={<Loading />}>
               {" "}
               {/* Loading state for FilterDropdown */}
               <FilterDropdown setData={setData} orderData={orderData} />
             </Suspense>
           )}
 
-          <Suspense fallback={<div>Loading Order Table...</div>}>
+          <Suspense fallback={<Loading />}>
             {" "}
             {/* Loading state for OrderTable */}
             <OrderTable
@@ -116,7 +117,7 @@ const ProjectOrders = () => {
           </Suspense>
 
           {/* Pagination */}
-          <Suspense fallback={<div>Loading Pagination...</div>}>
+          <Suspense fallback={<Loading />}>
             {" "}
             {/* Loading state for Pagination */}
             <Pagination
