@@ -7,7 +7,7 @@ export const AppContext = createContext();
 // The AppProvider component will wrap the application and provide context values
 export const AppProvider = ({ children }) => {
   // State for managing the theme (light/dark) with initial value from localStorage
-  const [theme, setTheme] = useState(localStorage.getItem("theme"));
+  const [theme, setTheme] = useState(localStorage.getItem("theme") || "light");
 
   // State to manage the visibility of the side navigation
   const [sideNav, setSideNav] = useState(true);
