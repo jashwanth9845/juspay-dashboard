@@ -105,7 +105,6 @@ const ProjectOrders = () => {
           )}
 
           <Suspense fallback={<Loading />}>
-            {" "}
             {/* Loading state for OrderTable */}
             <OrderTable
               currentItems={currentItems}
@@ -117,16 +116,32 @@ const ProjectOrders = () => {
           </Suspense>
 
           {/* Pagination */}
-          <Suspense fallback={<Loading />}>
-            {" "}
-            {/* Loading state for Pagination */}
-            <Pagination
-              itemsPerPage={itemsPerPage}
-              totalItems={data.length}
-              paginate={paginate}
-              currentPage={currentPage}
-            />
-          </Suspense>
+          {data?.length > 0 ? (
+            <Suspense fallback={<Loading />}>
+              {" "}
+              {/* Loading state for Pagination */}
+              <Pagination
+                itemsPerPage={itemsPerPage}
+                totalItems={data.length}
+                paginate={paginate}
+                currentPage={currentPage}
+              />
+            </Suspense>
+          ) : (
+            <div
+              className="semibold-14 w-400"
+              style={{
+                color: "var(--black-100)",
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+                width: "100%",
+                padding: "1rem",
+              }}
+            >
+              No Result found
+            </div>
+          )}
         </div>
       </ErrorBoundary>
     </Suspense>

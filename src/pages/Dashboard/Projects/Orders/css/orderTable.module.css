@@ -13,7 +13,10 @@
     font-weight: 600;
     margin-bottom: 20px;
 }
-
+.moreButtonRow{
+    opacity: 0;
+    cursor: pointer;
+  }
 
 table.tableDivContainer  {
     width: 100%;
@@ -76,7 +79,7 @@ table.tableDivContainer  {
    
     cursor: pointer;
   }
-  
+ 
   /* Create a custom checkbox */
   .customCheckbox {
     display: inline-block;
@@ -131,7 +134,9 @@ table.tableDivContainer  {
 .tableDivContainer tbody tr:hover {
     background-color: var(--primary-light);
 }
-
+.tableDivContainer tbody tr:hover .moreButtonRow{
+    opacity: 1;
+  }
 .userInfo {
     display: flex;
     align-items: center;

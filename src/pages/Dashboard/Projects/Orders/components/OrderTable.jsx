@@ -65,6 +65,7 @@ const OrderTable = ({
                 <input
                   id={"check-" + row.orderId}
                   type="checkbox"
+                  style={{ display: "none" }}
                   onChange={(e) => handleCheckboxChange(e, row.orderId)}
                   checked={!!checkedItems[row.orderId]} // Use double negation to ensure boolean
                 />
@@ -101,6 +102,9 @@ const OrderTable = ({
               <span className={`${styles.status} ${styles[row.status.slug]}`}>
                 {row.status.text}
               </span>
+            </td>
+            <td className={`regular-12 w-400`}>
+              <div className={styles?.moreButtonRow}>...</div>
             </td>
           </tr>
         ))}
