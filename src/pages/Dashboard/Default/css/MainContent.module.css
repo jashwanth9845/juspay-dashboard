@@ -1,0 +1,60 @@
+.mainContent {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.row1 {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  gap: var(--16);
+
+}
+
+.row1 .flexItem {
+  flex: 50%;
+}
+
+.row2,
+.row3 {
+  display: grid;
+  grid-template-columns: 80% 20%;
+  gap: var(--16);
+
+}
+.row1 .flexItem:first-child {
+  display: grid;
+    width: 100%;
+    gap: 28px;
+    height: 100%;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.row1 .flexItem:last-child {
+  background-color: var(--primary-light);
+  padding: var(--24);
+  gap: var(--16);
+  border-radius: var(--16);
+}
+
+.row2 .flexItem:first-child {
+  background-color: var(--primary-light);
+  padding: var(--24);
+  gap: var(--16);
+  border-radius: var(--16);
+}
+
+
+.row3 .flexItem:last-child {
+  background-color: var(--primary-light);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: var(--24);
+  gap: var(--16);
+  border-radius: var(--16);
+}

@@ -1,0 +1,156 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 212px;
+  padding: var(--20) var(--16) var(--20) var(--16);
+  gap: var(--16);
+  transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.sidebar.close{
+  width: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.linkDivContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: var(--4);
+}
+
+.linkDiv {
+  text-decoration: none;
+  color: var(--black-100);
+  display: flex;
+  padding: var(--4) var(--16) var(--4) 0;
+  gap: var(--4);
+  margin-left: var(--30);
+  border-radius: var(--8);
+  width: fit-content;
+}
+
+.navProfileDiv {
+  display: flex;
+  padding: var(--4);
+  gap: var(--8);
+  border-radius: var(--8);
+  color: var(--black-100);
+}
+
+.activitiesContainer,
+.menuDropperContainer {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 0px var(--12) 0px;
+  gap: var(--4);
+  opacity: 0px;
+
+}
+.menuDropperIcon svg path{
+  fill: var(--black-100)
+}
+.activitiesListContainer {
+  display: flex;
+
+}
+
+.activitiesList {
+  padding: var(--4) var(--8) var(--4) var(--8);
+  gap: var(--8);
+  border-radius: var(--8);
+  color: var(--black-40);
+cursor: pointer;
+opacity: 0.5;
+}
+.activitiesList.active{
+  opacity: 1;
+}
+.menuDropperHeading {
+  display: flex;
+  padding: var(--4) var(--12) var(--4) var(--12);
+  gap: 0px;
+  border-radius: var(--8);
+  color: var(--black-40);
+
+}
+
+.menuDropperDiv {
+  display: flex;
+  padding: var(--4) var(--8) var(--4) 0px;
+  gap: var(--4);
+  border-radius: var(--8);
+  opacity: 0px;
+  color: var(--black-100);
+  cursor: pointer;
+  text-decoration: none;
+  transform: all 0.3s ease;
+}
+.rightIcon{
+  transform: all 0.3s ease;
+}
+.menuDropperDiv.active  , .linkDiv.active{
+  background: var(--black-5);
+}
+.menuDropperDiv.active .rightIcon{
+transform: rotate(90deg);
+}
+.menuDropperDiv span {
+  white-space: nowrap;
+}
+.rightIcon path{
+  fill:  var(--black-20);
+
+}
+
+.menuDropperDiv.active::before , .linkDiv.active::before{
+  content: '';
+  display: block;
+  position: relative;
+  width: 5px;
+  height: 100%;
+    margin-right: 12px;
+  border-radius: var(--8);
+  background: var(--Primary-Brand);
+}
+
+.menuDropperLink {
+  text-decoration: none;
+  color: var(--black-100);
+
+}
+
+.menuDropperIcon {
+  margin-left: var(--20);
+  height: fit-content;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.sideListContainer li {
+  margin-left: var(--16);
+  padding: var(--4) var(--8) var(--4) var(--8);
+
+  border-radius: var(--8);
+}
+
+.sideListContainer li a {
+  text-decoration: none;
+  color: var(--black-100);
+}
+
+.sideListContainer li::marker {
+  color: var(--black-20);
+}
+
+
+.sidebar-section {
+  margin-bottom: 2rem;
+}
+
+.sidebar-section h4 {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}

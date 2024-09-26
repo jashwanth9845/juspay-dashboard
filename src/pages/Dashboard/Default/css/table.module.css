@@ -1,0 +1,34 @@
+.TableContainer {
+    display: flex;
+    flex-direction: column;
+    padding: var(--24);
+    gap: var(--4);
+    border-radius: var(--16);
+    background: var(--primary-light);
+    height: 100%;
+}
+
+.TableContainer table {
+    border-spacing: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.TableContainer h3{
+    color: var(--black-100);
+}
+.TableContainer table thead tr {
+    color: var(--black-40);
+}
+
+.TableContainer table thead tr th {
+    height: 40px;
+    padding: var(--8) var(--12) var(--8) 0px;
+    border-bottom: 1px solid var(--black-20);
+}
+
+.TableContainer table tbody tr td {
+    color: var(--black-100);
+    padding: var(--8) var(--12) var(--8) 0px;
+
+}

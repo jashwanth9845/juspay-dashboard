@@ -1,0 +1,104 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  border: 1px solid var(--black-10);
+}
+
+.headerLeft {
+  display: flex;
+  align-items: center;
+  gap: var(--8);
+}
+.themeIcon{
+  transition: all 0.3s ease;
+}
+.themeIcon.themeDarkIcon{
+  transform: rotate(90deg);
+}
+.breadCrumbDiv {
+  display: flex;
+  padding: var(--4) var(--8) var(--4) var(--8);
+  gap: var(--4);
+  border-radius: var(--8);
+}
+.breadCrumbDiv > span:not(:last-child){
+  opacity: 0.5;
+}
+.breadCrumbDiv > span {
+  display: flex;
+  padding: var(--4) var(--8) var(--4) var(--8);
+  gap: var(--4);
+  border-radius: var(--8);
+  justify-content: center;
+    align-items: center;
+    color: var(--black-100);
+}
+.breadCrumbDiv span a  , .breadCrumbDiv  a{
+  color: var(--black-100);
+  text-decoration: none;
+}
+.breadCrumbDiv > span span {
+  padding: 0 0 0 var(--8);
+}
+.headerRight {
+  display: flex;
+  align-items: center;
+  gap: var(--20);
+}
+
+.searchBarContainer {
+  display: flex;
+  padding: 4px 8px 4px 8px;
+  gap: var(--8);
+  border-radius: var(--8);
+  border: none;
+  background: var(--black-5);
+  align-items: center;
+  width: 200px; /* Adjust based on your needs */
+  position: relative;
+}
+
+.searchInput {
+  border: none;
+  background-color: transparent;
+  outline: none;
+  font-size: 14px;
+  width: 116px;
+    height: 20px;
+  flex-grow: 1;
+  color: var(--black-20);
+}
+.searchBarContainer .searchIcon{
+  width: 16px;
+  height: 16px;
+}
+.searchBarContainer .searchIcon{
+  fill: var(--black-20);
+  
+}
+.searchInput::placeholder {
+  color: var(--black-20);
+}
+
+.commandShortcut {
+  font-size: 12px;
+  color: var(--black-20);
+
+  margin-left: 8px;
+}
+
+
+.icons {
+  display: flex;
+  gap: 1rem;
+
+}
+
+.icons svg {
+  cursor: pointer;
+}
+
+.icons svg path {
+  fill: var(--black-100);
+}

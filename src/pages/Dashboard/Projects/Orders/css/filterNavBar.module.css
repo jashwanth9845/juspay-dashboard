@@ -1,0 +1,74 @@
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--primary-light);
+    padding: var(--8);
+    gap: var(--16);
+    border-radius: var(--8);
+}
+
+.navIcons {
+    display: flex;
+    gap: 10px;
+}
+
+.iconButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--4);
+    gap: var(--4);
+    border-radius: var(--8);
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.iconButton svg {
+    height: 20px;
+    width: 20px;
+}
+
+.iconButton svg path {
+    fill: var(--black-100);
+}
+
+.iconButton:hover {
+    background-color: var(--black-20);
+}
+
+.searchContainer {
+    display: flex;
+    border: 1px solid var(--black-10);
+    background: var(--white-40);
+    padding: 4px 8px 4px 8px;
+    gap: var(--8);
+    border-radius: var(--8);
+    border: 1px 0px 0px 0px;
+
+}
+
+.searchInput {
+    display: flex;
+    gap: var(--4);
+    border: none;
+    background: transparent;
+    color: var(--black-100);
+}
+
+.searchInput:focus {
+    outline: none;
+}
+
+.searchContainer .searchIcon {
+    width: 16px;
+    height: 16px;
+}
+
+.searchContainer .searchIcon {
+    fill: var(--black-20);
+
+}
+

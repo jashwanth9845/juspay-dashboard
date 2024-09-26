@@ -1,0 +1,198 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+/* Theme Variables */
+:root {
+  --main-bg: #ffffff;
+  --text-color: #000;
+  --secondary-cyan:#A8C5DA;
+  --primary-color:#1C1C1C;
+  --primary-light:#F7F9FB;
+  --black-10:#1C1C1C1A;
+  --black-100:#1C1C1C;
+  --primary-blue:#E3F5FF;
+  --primary-purple:#E5ECF6;
+  --inter-font:"Inter";
+  --Secondary-Mint:#BAEDBD;
+  --Secondary-Indigo:#95A4FC;
+ --Secondary-Blue:#B1E3FF;
+ --chart-stroke:#F7F9FB;
+  --white-40 : rgba(255, 255, 255, 0.4);
+ --white-40 : rgba(255, 255, 255, 0.4);
+ --white-20 : rgba(255, 255, 255, 0.2);
+ --black-20: #1C1C1C33;
+ --Primary-Brand:#1C1C1C;
+--black-40: #1C1C1C66;
+--black-5:#1C1C1C0D;
+ --24:1.5rem;
+ --20:1.25rem;
+--16:1rem;
+--4:0.25rem;
+--8:0.5rem;
+--12:0.75rem;
+--30:1.875rem;
+}
+
+.app.dark {
+  --main-bg: #121212;
+  --text-color: #fff;
+  --primary-color:#C6C7F8;
+  --primary-light:#ffffff19;
+  --secondary-cyan:#A8C5DA;
+  --black-10:#FFFFFF1A;
+  --black-100:#FFFFFF;
+  --primary-blue:#E3F5FF;
+  --primary-purple:#E5ECF6;
+  --black-20: #FFFFFF33;
+  --chart-stroke:#292929;
+  --black-40: #FFFFFF66;
+  --inter-font:"Inter";
+  --Secondary-Mint:#BAEDBD;
+  --Secondary-Indigo:#95A4FC;
+ --Secondary-Blue:#B1E3FF;
+ --white-40: rgba(28, 28, 28, 0.4);
+--white-40:rgba(28, 28, 28, 0.4);
+--white-20:rgba(28, 28, 28, 0.2);
+--black-5:#FFFFFF1A;
+--Primary-Brand:#C6C7F8;
+--24:1.5rem;
+--20:1.25rem;
+--16:1rem;
+--4:0.25rem;
+--8:0.5rem;
+--12:0.75rem;
+--30:1.875rem;
+}
+
+
+/* typography */
+
+.semibold-14{
+font-family: var(--inter-font);
+font-size: 14px;
+font-weight: 600;
+line-height: 20px;
+text-align: left;
+}
+.semibold-24{
+font-family: Inter;
+font-size: 24px;
+font-weight: 600;
+line-height: 36px;
+text-align: left;
+}
+.regular-14{
+font-family: var(--inter-font);
+font-size: 14px;
+font-weight: 600;
+line-height: 20px;
+text-align: left;
+}
+.w-400{
+  font-weight: 400;
+}
+.w-600{
+  font-weight: 600;
+}
+.regular-12{
+  font-family: var(--inter-font);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: left;
+}
+
+
+.semibold-12-D{
+font-family: var(--inter-font);
+font-size: 12px;
+font-weight: 600;
+line-height: 18px;
+text-align: left;
+}
+/* typography */
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a{
+  text-decoration: none;
+}
+
+.main-layout {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+ 
+}
+.content-area {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+  border-inline: 1px solid  var(--black-10);
+}
+.app-container {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  background-color: var(--main-bg);
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.rsm-geography{
+  fill: var(--secondary-cyan);
+  stroke: #FFFFFF;
+  stroke-width: 1.5;
+}
+.marker-map{
+  fill: var(--primary-color);
+  stroke: #FFFFFF;
+  stroke-width: 8px;
+  
+}
+.recharts-rectangle.recharts-tooltip-cursor{
+  fill: var(--black-5);
+}
+.coming-soon{
+  display: flex;
+  width: 100%;
+  height: calc(100vh - 145px);
+  justify-content: center;
+  align-items: center;
+  color: var(--black-100);
+}
+.no-data-found{
+  color: var(--black-100);
+}
+.Error-container {
+  display: flex;
+  flex-direction: column;           
+  align-items: center;             
+  justify-content: center;         
+  height: 100vh;                  
+  background-color: var(--primary-light);     
+  color: var(--black-100);                 
+  text-align: center;                   
+  border-radius: 5px;              
+}
+
+
+
+
+
+.Error-container-button {
+  background-color: var(--black-5);       
+  color: var(--black-20);                   
+  padding: 10px 20px;            
+  border: none;                  
+  border-radius: 5px;            
+  cursor: pointer;                 
+  transition: background-color 0.3s; 
+}
+
+.Error-container-button:hover {
+  background-color:  var(--black-10);       
+}

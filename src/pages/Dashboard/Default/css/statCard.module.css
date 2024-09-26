@@ -1,0 +1,52 @@
+.statCard {
+    display: flex;
+    min-width: 202px;
+    flex-direction: column;
+    justify-content: center;
+    flex: 25% 1;
+    height: 112px;
+    padding: var(--24);
+    gap: var(--4);
+    border-radius: var(--16);
+    height: auto;
+    background-color: var(--primary-light);
+    color: #1C1C1C;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .statCard:nth-child(1) , .statCard:nth-child(4) {
+    background-color: var(--primary-blue);
+  }
+  
+  .statCard:nth-child(2) , .statCard:nth-child(3){
+    color: var(--black-100);
+  }
+  
+  .statCard:nth-child(2) .statusView svg  path, .statCard:nth-child(3) .statusView svg path{
+    fill: var(--black-100);
+}
+  
+  .statCardData {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    height: fit-content;
+  }
+  .statCard .statusView{
+  display: flex;
+    gap: var(--4);
+    border-radius: var(--8);
+    justify-content: center;
+    align-items: center;
+    
+  }
+
+  @media (max-width:1480px) {
+    .statCard {
+      min-width: unset;
+    }
+    
+  }
+  

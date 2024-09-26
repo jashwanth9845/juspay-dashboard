@@ -1,0 +1,86 @@
+
+.RChartHeadingContainer{
+    display: flex;
+    gap: var(--16);
+    border-radius: var(--8);
+    color: var(--black-100);
+    }
+    .RChartHeadingContainer h3  , .BChartHeadingContainer h3 , .TableContainer h3{
+      color: var(--black-100);
+      display: flex;
+      gap: var(--16);
+    }
+    .RChartHeadingContainer h3::after{
+      position: relative;
+      content: '';
+      display: flex;
+      height: 100%;
+      width: 1px;
+      background: var(--black-20);
+    }
+    .RChartHeadingList{
+      display: flex;
+      gap: var(--16);
+      border-radius: var(--8);
+    }
+    .RChartHeadingList li {
+      margin-left: var(--16);
+    }
+    .RChartHeadingList li::marker{
+      color: var(--Secondary-Cyan, #A8C5DA);
+     
+    }
+
+    .chartContainer{
+        display: flex;
+        flex-direction: column;
+        gap: var(--16);
+      
+      }
+
+
+
+.SalesChartContainer {
+    display: flex;
+      color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      gap: var(--16);
+      width: auto;
+      flex-direction: column;
+      width: 100%;
+  }
+  
+  .SalesChartH2 {
+    text-align: center;
+    color: var(--black-100);
+  }
+  
+  .SalesPieChart {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+  
+  .SalesPieChartData {
+    display: flex;
+    flex-direction: column;
+    gap: var(--16);
+  }
+  
+  .SalesPieChartDataP {
+    display: flex;
+    justify-content: space-between;
+    color: var(--black-100);
+    opacity: 1;
+    will-change: auto;
+    transform: none;
+    text-transform: capitalize;
+  }
+  
+  .SalesPieChartDataDot {
+    width: 6px;
+    height: 6px;
+  }
