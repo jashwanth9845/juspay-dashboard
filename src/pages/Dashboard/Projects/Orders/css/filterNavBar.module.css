@@ -46,8 +46,6 @@
     padding: 4px 8px 4px 8px;
     gap: var(--8);
     border-radius: var(--8);
-    border: 1px 0px 0px 0px;
-
 }
 
 .searchInput {
